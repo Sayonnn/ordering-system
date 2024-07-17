@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- 
+    Laud Zion Cascalla
+    BSIT NT - 3101
+ -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Ordering System</title>
+    <link rel="stylesheet" href="Cascalla.css" type = "text/css">
+    <script src="Cascalla.js" defer></script>
+
+</head>
+<body>
+
+<nav class="navContainer">
+    <h2>Basic Ordering System</h2>
+    <ul>
+        <li><a href="" class="active">Home</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">Pricing</a></li>
+        <li><a href="">About us</a></li>
+    </ul>
+</nav>
+
+<section >
+    <div class = "topContainer">
+        <input type="image" class="" src="img/chicken.jpg" name="" id="btnChicken" value=""  onclick="renderchicken();">
+        <input type="image" class="" src="img/Burger.png" name="" id="btnBurger" value=""  onclick="renderBurger();">
+        <input type="image" class="" src="img/Fries.png" name="" id="btnFries" value=""  onclick="renderFries();">
+        <input type="image" class="" src="img/Pizza.jpg" name="" id="btnPizza" value=""  onclick="renderPizza();">
+        <input type="image" class="" src="img/Sandwich.jpg" name="" id="btnSandwich" value=""  onclick="renderSandwich();">
+        <input type="image" class="" src="img/Pasta.png" name="" id="btnPasta" value=""  onclick="renderPasta();">
+        <input type="image" class="" src="img/soda.png" name="" id="btnSoda" value=""  onclick="renderSoda();">
+    </div>
+    <div class ="midContainer">
+        <textarea name="" id="orderContainer" cols="135" rows="10" readonly>
+        </textarea>
+    </div>
+    <marquee behavior="scroll" direction="ltr">Chicken: $300 | Burger: $200 | Fries: $50 | Pizza: $500 | Sandwich: $150 | Pasta: $250 | Soda: $50</marquee>
+
+    <div class = "buttomContainer">
+        <button type="reset" name="btnReset" id="btnReset" value="Reset" onclick="Reset();">Reset</button>
+        <label for="Total">Total:</label>
+        <input type="text" name="Total" id="Total" readonly>
+    </div>
+</section>
+
+</body>
+</html>
