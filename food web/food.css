@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Yuji+Mai&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;  
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* background codes starts here */
+body{
+   background-image: url("wood\ background.jpg");
+    background-attachment:fixed;
+    background-position:top;
+    background-size: cover; 
+    height:auto;
+    transition: .7s ease-in-out;
+}
+/* background codes ends here */
+
+/* logo codes starts here */
+.logo{
+    display:grid;
+    place-items: center;
+    color:rgb(226, 128, 23);
+    width:100%;
+    font-family:cursive;
+    background-color:transparent;
+    cursor:pointer;
+
+}
+
+.logo2{
+font-size: 55px;
+cursor:pointer;
+}
+
+.logo2 i{
+    position:absolute;
+    left:3%;
+    top:3%;
+    color:rgb(226, 128, 23);
+    font-family: "Pacifico";
+    padding:50px;
+}
+/* logo codes ends here */
+
+/* navigation bar codes starts here */
+.nav-container{
+   width:100%;
+   height:auto;
+}
+
+.nav-lists{
+    display:flex;
+    justify-content: center;
+    line-height: 0px; 
+}
+
+.nav-container .nav-lists li{
+    font-weight: bold;     
+}
+
+.nav-container .nav-lists li a{
+    display:inline-block;
+    color:black;
+    padding:15px;
+     margin:10px; 
+     border-radius: 50%;
+}
+
+.nav-container .nav-lists li a:hover{
+    background-color: rgb(226, 128, 23);
+    box-shadow: 0px 0px 50px rgb(226, 128, 23);
+    transition:0.8s;
+}
+
+/* Order drop down codes starts here */
+.nav-container .Order-lists{
+    display:none;
+    z-index: 10;
+}
+
+.nav-container .Order-lists .Order-list a{
+  color:black;
+  font-size: 15px;
+}
+
+.nav-container .Order-lists .Order-list a:hover{
+    color:black;
+    font-size: 15px;
+    padding:18px;
+  }
+
+.nav-container .Orders:hover .Order-lists{
+    display:block;
+    position:absolute;
+}
+
+/* Order dropdown codes ends here */
+
+/* contacts codes starts here */
+.nav-container .Contacts-lists{
+    display:none;
+    z-index:10;
+    
+}
+
+.nav-container .Contacts-lists .Contacts-list a{
+    color:black;
+    font-size:15px;
+   
+}
+
+.nav-container .Contacts-lists .Contacts-list a:hover{
+    color:black;
+    font-size: 15px;
+    padding:18px;
+  }
+
+.nav-container .Contacts:hover .Contacts-lists{
+    display:block;
+    position:absolute;
+    
+}
+/* contacts codes ends here */
+
+/* navigation bar codes ends here */
+
+/* menu food container codes starts here*/
+.menu-container{
+    width:100%;
+}
+
+.items{
+    display:grid;
+    grid-template-columns:repeat(5, 1fr) ;
+    padding:30px;
+    grid-column-gap:20px;
+    transition:1s ease;
+}
+
+.item{
+    display:grid;
+    place-content: center;
+    place-items: center;
+}
+
+.item h4{
+    color:rgb(226, 128, 23);
+    font-size:20px;
+    font-weight:lighter;
+    font-family: "Pacifico";
+}
+
+.item img{
+    height:200px;
+    width:200px;
+    padding:5px;
+    margin:10px;
+    border-radius: 100%;
+    border:2px dashed black;
+}
+
+.item button{
+    border:1px solid rgb(226, 128, 23)e;
+    border-radius: 10px;
+    cursor:pointer;
+    padding:3px;
+   background:black;
+   color:rgb(226, 128, 23);
+}
+
+.item button:hover{
+    box-shadow: 0px 0px 30px rgb(226, 128, 23);
+    /* border-radius: 50%; */
+    color:black;
+    transition:0.5s;
+    padding:5px;
+    background-color:rgb(226, 128, 23);
+    font-weight: bold;
+}
+/* menu food container codes ends here */
+
+/* about part of the page codes starts here */
+article{
+    margin-top:14% ;
+    width:100%;
+    height:130vh;
+    background-color: black;
+    opacity:.7;
+    
+}
+article h2{
+    color:white;
+    width:1000px;
+    position:absolute;
+    font-family:"Pacifico";
+    top:55%;
+    left:50%;
+    transform:translate(-16%, -50%);
+}
+article h2 span{
+    font-size:35px;
+    
+}
+article p{
+    z-index:10;
+    color:white;
+    font-size:17px;
+    padding:150px;
+    text-align:center;
+    font-family:cursive;
+}
+/* about part of the page codes ends here */
+
+/* view menu button codes starts here */
+.fixed-button button{
+    position:fixed;
+    right:3%;
+    top:93%;
+    font-size:15px;
+    z-index:10;
+}
+
+.fixed-button button:hover{
+    box-shadow: 0px 0px 30px lightblue;
+    color:black;
+    transition:0.5s;
+    background-color:lightblue;
+    font-weight: bold;
+    font-size:17px;
+}
+/* view menu button codes ends here */
+
+/* icons codes starts here */
+
+.Icons{
+right:0;
+position:fixed;
+z-index: 10;
+}
+
+.Icons .icons{
+    position:sticky;
+    z-index: 10;
+    
+    
+    
+}
+
+.Icons .icons img{
+    width:33px;
+    
+    
+}
+.Icons .icons img:hover{
+    width:33px;
+    width:40px;
+    
+}
+.Icons .icons li{
+    float:right;
+    
+}
+
+/* menu prices */
+
+.menu-list{
+    background-color:white;
+    opacity:.7;
+    width:100%;
+    height:34.8vh;
+    cursor:pointer;
+    
+}
+
+.menu-list dl{
+    font-size:20px;
+    
+}
+.menu-lists dl{
+    color:black;
+}
+
+.menu-lists2 dl{
+    color:black;
+}
+
+.menu-lists3 dl{
+    color:black;
+}
+
+.menu-lists4 dl{
+    color:black;
+}
+
+.menu-list{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    line-height: 35px;
+}
+
+.menu-list dl dt span{
+    font-size:33px;
+    font-weight: bolder;
+}
+
+
+ /* responsive css design */
+ 
+@media all and (max-width:842px){
+    .logo2{
+        font-size:40px;
+        }
+        
+        .logo2 i{    
+            left:0%;
+            top:15%;
+            padding:0px;
+        }
+
+        article h2{
+            position:relative;
+            font-family:"Pacifico";
+            top:10%;
+            left:50%;
+            transform:translate(-16%, -50%);
+        }
+
+        article h2 span{
+            font-size:35px;
+        }
+
+        article p{
+            font-size:15px;
+            padding:120px;
+        }
+
+        article{
+            margin-top:14% ;
+            height:153vh;   
+        }
+
+        .menu-list{    
+            height:34.8vh;      
+        }
+        
+        .menu-list dl{
+            font-size:15px;   
+        }
+
+        .menu-list{
+            line-height: 30px;
+        }
+        
+        .menu-list dl dt span{
+            font-size:30px;
+            font-weight: bolder;
+        }
+
+        .item h4{
+            font-size:15px;
+
+        }
+        
+}
